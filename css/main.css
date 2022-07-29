@@ -1,0 +1,498 @@
+main{
+    position:relative;
+}
+
+/*intro start*/
+
+main .intro{
+    position:relative;
+    margin-bottom: 70px;
+}
+
+main .intro_imgwrap{
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+}
+main .intro_imgwrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: left bottom;
+
+
+    animation:bg 15s linear alternate forwards;
+}
+
+@keyframes bg{
+    0%  {object-position: 60% bottom; 
+    }
+     100%  {object-position: 90% bottom;
+    }
+}
+
+main .intro_wrap{
+    position:absolute;
+    bottom:100px;
+    left:0;
+    right:0;
+    z-index: 5;
+    width: 100%;
+}
+
+main .intro_wrap h2{
+    font-size:35px; 
+    color:#fff;
+    font-weight: 700;
+    padding:0 10px;
+    line-height:45px;
+    font-family: 'Hahmlet', serif;
+}
+
+main .intro_wrap h2 strong{ 
+    font-weight:700;
+}
+main .intro_wrap .intro_txt{
+    margin-top: 40px;
+    padding:0 10px;
+    color: #ebe5e2;
+    font-size: 13px;
+    font-weight:700;
+}
+
+main .intro_wrap .intro_txt p.line1{
+    margin-bottom: 10px;
+}
+
+main .intro_wrap .sns{
+    position: absolute;
+    bottom: -70px;
+    padding-left: 10px;
+    z-index: 5;
+}
+
+main .scroll_animation{
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing: .1875rem;
+    position: absolute;
+    z-index: 1;
+    right:10px;
+    bottom:79px;
+}
+
+main .scroll_animation a{
+    font-family: 'Poppins', sans-serif;
+    display: block;height: 100%;
+    font-size:9px;
+}
+
+main .scroll_animation a::before{
+    content: "";
+    opacity:0.5;
+    height: 1px;
+    width: 50px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:60px;
+}
+
+main .scroll_animation a::after{
+    content: "";
+    height: 1px;
+    width: 10px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:60px;
+
+    animation:scroll_full 3s alternate infinite linear;
+}
+    @keyframes scroll_full{
+		0%{width:10px;}	
+		100%{width:50px;}
+	}
+
+
+/*intro end*/
+/*whatwedo start*/
+
+main .whatwedo{margin-bottom: 75px;}
+main .whatwedo .whatwedo_imgwrap{
+    padding:0 10px;
+    width: 100%;
+    position: relative;
+}
+
+main .whatwedo .whatwedo_imgwrap .wwd_imgwrap1{
+    width: 100%;
+    padding-right:20px;
+    box-sizing: border-box;
+}
+
+main .whatwedo .whatwedo_imgwrap .wwd_imgwrap1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+main .whatwedo .whatwedo_imgwrap .wwd_imgwrap2{
+    position:absolute;
+    border:10px solid #dbdcdd;
+    width: 50vw;
+    height: auto;
+    bottom: -50%;
+    right:0;
+
+}
+main .whatwedo .whatwedo_imgwrap .wwd_imgwrap2 iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main .whatwedo .whatwedo_imgwrap .roundanimation{
+    left: 42.5%;
+    bottom:-36px;
+}
+
+
+
+main .whatwedo .whatwedo_txt{
+    margin-top:160px;
+    padding:0 30px;
+    color:#1a1a1a;
+    font-size:24xpx;
+    line-height:32px;
+}
+
+main .whatwedo .whatwedo_txt h2{
+    color:#4c4c5c;
+    font-size: 20px;
+}
+
+main .whatwedo .whatwedo_txt .whatwedo_t1{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+main .whatwedo .whatwedo_txt .whatwedo_t2{
+    color: #6f7070;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    word-break: keep-all;
+}
+
+main .direct{
+    padding:0 10px;
+    background: #4c4c5c;
+    padding: 140px 0;
+    display:flex;
+    flex-direction: column;
+    font-weight: 400;
+    text-shadow: -1px 0 #f4f4f4, 0 1px #f4f4f4, 1px 0 #f4f4f4, 0 -1px #f4f4f4;
+    font-size:45px;
+    color:#4c4c5c;
+    text-align: center;
+    line-height:57px;
+    
+}
+
+main .direct a{
+    display: block;
+    transition:all 0.3s;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+}
+
+main .direct a:hover{
+    color:#fff;
+}
+
+main .create_inspire{
+    background-color: #17181d;
+    padding:100px 0 96px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main .create_inspire .create_inspire_img{
+    width: 100%;
+    overflow: hidden;
+}
+
+main .create_inspire .create_inspire_img img{
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    display: block;
+}
+
+main .create_inspire .create_inspire_txt{
+   padding-left: 30px;
+    padding-right: 10%; 
+    margin-top: 70px;
+}
+
+main .create_inspire .create_inspire_txt h3{
+    color: #c9c9c9;
+    font-size:15px;
+    margin-bottom: 15px;
+    font-weight:400;
+}
+
+main .create_inspire .create_inspire_txt p{
+   font-size:15px;
+   color:#626262; 
+   line-height:25px;
+   margin-bottom: 15px;
+   word-break: keep-all;
+}
+
+main .create_inspire .create_inspire_txt span{
+    color: #fff;
+}
+
+main .create_inspire .more_btn{
+    color:#fff;
+    margin-left: 30px;
+}
+
+main .company{
+    padding: 70px 0px;
+    text-align: center;
+    font-size: 30px;
+    line-height:35px;
+}
+
+main .company p{
+
+}
+
+main .company_wrap{
+    padding:0 10px;
+}
+
+main .company_wrap h3{
+    color:#fff;
+    font-weight: 700;
+}
+
+main .company_wrap > p{
+    margin-bottom: 35px;  
+    font-size: 15px;
+    word-break: keep-all;
+}
+
+main .company .img_wrap{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+main .company .img_wrap img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main .company .txt_wrap{}
+main .company .txt_wrap h4{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+main .company .txt_wrap p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+main .company .txt_wrap strong{
+    font-size: 15px;
+    margin-bottom: 50px;
+    display: block;
+    font-weight: 700;
+}
+
+main .company .bar{
+    width: 100%;
+    height: 1px;
+    border-top:1px solid #333;
+    margin-bottom: 50px;
+}
+
+main .company .company_wrap .company_bottom_wrap{
+    display: flex;
+    flex-direction: column;
+}
+main .company .company_wrap .company_bottom_wrap > li{}
+main .company .company_wrap .company_bottom_wrap > li .company_img_wrap{
+    width: 100%;
+    height:auto;
+}
+
+main .company .company_wrap .company_bottom_wrap > li .company_img_wrap img{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+
+main .company .company_wrap .company_bottom_wrap > li .company_txt_wrap{
+    margin-top: 40px;
+    word-break: keep-all;
+    text-align: left;
+    width: 90%;
+    margin-left: 15px;
+}
+
+
+main .company .company_wrap .company_bottom_wrap > li .company_txt_wrap strong{
+    font-size: 20px;
+    line-height:25px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+main .company .company_wrap .company_bottom_wrap > li .company_txt_wrap p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+
+/*work_slide end*/
+/*news_Slide start*/
+
+main .company .news_slide{
+    background: #768a94;
+    width: 100%;
+}
+
+main .company .news_slide .newsinsights_slide{
+    width: 100%; padding:70px 0;
+}
+
+main .company .news_slide .swiper-slide{
+    padding:0 5%;
+    overflow: hidden;
+}
+
+main .company .news_slide .swiper-slide .img_wrap{
+    position:relative;
+    width: 100%;
+    height: 320px;
+}
+
+main .company .news_slide .swiper-slide .img_wrap img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: left 25%;
+} 
+
+main .company .news_slide .swiper-slide .img_wrap .adBox{
+    height: 100%;
+    width: 100%;
+}
+
+main .company .news_slide .swiper-slide .img_wrap .adBox iframe{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+main .company .news_slide .swiper-slide .news_slide_txt{
+    text-align: left;
+}
+main .company .news_slide .swiper-slide .news_slide_txt span{
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .1875rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+main .company .news_slide .swiper-slide .news_slide_txt p{
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+main .company .news_slide .swiper-slide .news_slide_txt p a{
+    display:block;
+    height: 100%;
+}
+
+.news_slide .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #768a94;
+}
+.news_slide .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+  background: #d4d5d6;
+}
+
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 60%;
+    height: 2px;
+    left: 0;
+    top: initial;
+    bottom: 50px;
+    margin:0 0 0 5%;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #fff;
+    opacity: 0.5;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 30px;height: 30px;
+    background: #fff;
+    top:initial;
+    bottom:40px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev{
+    left:initial;
+    right:55px;
+}
+
+.swiper-button-next{
+    right:15px;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content:"";
+    background-image: url(https://www.designtonicltd.co.uk/wp-content/themes/impression/media/dist/img/arrow-right.svg);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    width: 30px; height: 30px;
+    margin-right: -8px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    transform: rotate(-180deg);
+    margin-right: initial;
+    margin-left: -8px;
+}
+
+
+

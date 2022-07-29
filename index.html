@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일페이지</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  
+    <script src="js/textSplite.js"></script>
+    <script src="js/custom.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="header_logo">
+            <a href="#">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+        </h1>
+        <div class="header_right">
+            <a href="#" class="hidden_menu_btn">
+                <div class="hidden_wrap">
+                    <span class="bar"></span>
+                    <span class="bar bar1px"></span>
+                    <span class="bar bardeg"></span>
+                </div>
+            </a>
+            <a href="#" class="hidden_contact">
+                <img src="./img/projects-icon.svg" alt="hidden_contact">
+            </a>
+        </div><!--header_right-->
+        <div class="hidden_menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                         <span class="num">01.</span>회사소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">02.</span>고객센터
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">03.</span>자주 묻는 질문
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">04.</span>매장안내
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">05.</span>채용
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--hidden_menu-->
+    </header>
+    <main>
+        <div class="intro">
+             <div class="intro_imgwrap">
+                <img src="./img/intro.jpg" alt="intro">
+            </div>    
+            <div class="intro_wrap">
+                <h2>
+                    <p>잘 만든 가구</p>
+                    <strong>일룸</strong>
+                </h2>
+                <div class="intro_txt">
+                    <p class="line1">
+                        BELIEF CREATING A BETTER LIFE
+                    </p>
+                    <p>
+                        PREMIUM FURNITURE BRAND
+                    </p>
+                </div><!--intro_txt-->
+                <div class="sns">
+                    <a href="#" class="insta">
+                        <i></i>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i></i>
+                    </a>
+                    <a href="#" class="kakao">
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+                <div class="scroll_animation">
+                    <a href="#">SCROLL</a>
+                </div>    
+        </div>  <!--intro-->
+        <div class="whatwedo">
+            <div class="whatwedo_imgwrap">
+                <div class="wwd_imgwrap1">
+                    <img src="./img/intro.jpg" alt="wwd_imgwrap1">
+                </div>   
+                <div class="wwd_imgwrap2">
+                    <iframe width="900" height="506" src="https://www.youtube.com/embed/spg8lK2Sj_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>   
+                <a href="https://www.youtube.com/watch?v=spg8lK2Sj_c" title="동영상 유튜브 바로가기" target="_blank" class="roundanimation"></a>
+            </div>
+            <div class="whatwedo_txt">
+                <h2>보기에 아름다운 디자인은 기본</h2>
+                <p class="whatwedo_t1">일룸은 보기에도 쓰기에도 아름다운 가구를 직접 디자인합니다.
+                </p>
+                <p class="whatwedo_t2">
+                    일룸의 ‘홈가구 연구소’는 심미적 아름다움과 함께 사용 편의성에 대해서도 치열하게 고민합니다.
+                    선 하나, 각도 하나에도 고객을 배려하는 마음을 담습니다.
+                </p>   
+                <a href="#" class="more_btn">
+                    <span>정보 더보기</span>
+                </a>
+            </div> <!--whatwedo_txt-->   
+        </div>
+        <div class="direct">
+            <a href="#">
+                제대로 직접
+            </a>
+            <a href="#">
+                친환경
+            </a>
+            <a href="#">
+                생활을 바꾸는
+            </a>
+            <a href="#">
+                뛰어난 디자인의
+            </a>
+            <a href="#">
+                합리적인 가격의
+            </a>
+            <a href="#">
+                안전한
+            </a>
+            <a href="#">
+                믿을 수 있는
+            </a>
+        </div><!--direct-->
+        <div class="create_inspire">
+            <div class="create_inspire_img">
+                <img src="./img/설계.jpg" alt="설계">
+            </div>
+            <div class="create_inspire_txt">
+                <h3 class="title">직접 설계해 제대로 만든 가구, 일룸 뿐이니까.</h3>
+                <p>일룸은 국제 공인시험 기관(KOLAS) 인증을 받은
+                    <span>국내 자체 생산 인프라</span>와 <span>홈가구 연구소만의 제품 개발 프로세스</span>를 통해  
+                    직접 설계하고 엄격한 테스트와 품질관리를 거쳐 
+                    제대로 된 가구를 만듭니다.  
+                </p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=XwJxihahD14&t=2s" class="more_btn">
+                <span>설계과정 보기 </span>
+            </a>
+        </div><!--create_inspire-->
+        <div class="company">
+           <div class="company_wrap">
+                <h3>그룹가치관</h3>
+                <p>바르고 좋은 회사, 퍼시스 그룹의 가치관입니다.</p>
+                <div class="img_wrap">
+                    <img src="./img/company1.jpg" alt="company1">
+                </div>
+                <div class="txt_wrap">
+                    <h4>창업이념</h4>
+                    <p>구성원들이 꿈을 실현할 수 있고, 고객과 주주에게는 지속 가능한 가치를 제공하며, 사회의 일원으로서 책임을 다하는</p> 
+                    <strong>바르고 좋은 회사를 만든다.</strong>
+                </div>
+                <div class="bar"></div>
+                <ul class="company_bottom_wrap">
+                    <li>
+                        <div class="company_img_wrap">
+                            <img src="./img/company2.jpg" alt="company2">
+                        </div>
+                        <div class="company_txt_wrap">
+                            <strong>01 회사가 각 구성원의 안정적 삶의 터전이자 진정한 자아실현의 장이 된다.</strong>
+                            <p>
+                                일을 통해 개인의 역량이 아낌없이 발휘되고, 그 결과에 따라 정당한
+                                대우를 받아 삶의 질을 향상시킬 수 있는 일터가 바르고 좋은 회사입니다.
+                                우리는 직장생활을 통해 보람을 찾고 개인의 성장을 이루어
+                                회사 전체가 발전하는 바르고 좋은 회사를 지향합니다.
+                            </p>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="company_img_wrap">
+                            <img src="./img/company3.jpg" alt="company3">
+                        </div>
+                        <div class="company_txt_wrap">
+                            <strong>02 고객과 주주에게 지속 가능한 가치를 제공한다.</strong>
+                            <p>                               
+                                고객에게 좋은 제품과 최선의 서비스로 최고의 만족을 선사하고, 주주에게
+                                정직한 기업 활동을 기반으로 창출된 이익을 나누고 장기적인 수일을
+                                보장하는 것이 바로 지속 가능한 가치를 제공하는 것입니다.
+                            </p>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="company_img_wrap">
+                            <img src="./img/company4.jpg" alt="company4">
+                        </div>
+                        <div class="company_txt_wrap">
+                            <strong>03 사회의 일원으로서 그 책임과 의무를 다한다.</strong>
+                            <p>
+                                퍼시스 그룹은 회사 내부나 유관 산업은 물론 지역 사회와 국가, 더 나아가서는                   인류 발전에 공헌하고자 하는 자세로 제도적, 윤리적 규범을 준수하고 책임
+                                과 의무를 다하는 등 건전하고 투명한 기업활동을 펼쳐
+                                기업과 사회의 바람직한 공존과 가치있는 번영을 도모합니다.
+                            </p>
+                        </div> 
+                    </li>
+                </ul>
+            </div> 
+            <div class="news_slide">
+                <div class="swiper newsinsights_slide">
+                    <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/swiper1.jpg" alt="swiper1">
+                            </div>
+                            <div class="news_slide_txt">
+                               <span>지면광고</span><span>2022.06</span>
+                               <a href="#">
+                                  <p>취향을 살다, 일룸</p>
+                               </a>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <div class="img_wrap">
+                                <div class="adBox">
+                                    <iframe id="player_44" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="[일룸] 취향을 살다, 김태리의 북카페 컬렉션 (kimtaeri, iloom)"src="https://www.youtube.com/embed/X2zRjRwGJ50?controls=2&amp;loop=1&amp;rel=0&amp;version=1&amp;autoplay=0&amp;modestbranding=1&amp;playsinline=0&amp;allowfullscreen=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.iloom.com&amp;widgetid=1" data-gtm-yt-inspected-7="true" data-gtm-yt-inspected-44082011_166="true"></iframe>
+                                </div>
+                            </div>
+                            <div class="news_slide_txt">
+                                <span>영상광고</span><span>2022.06</span>
+                               <a href="#">
+                                  <p>취향을 살다, 김태리의 [북카페 컬렉션]</p> 
+                               </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/swiper2.jpg" alt="swiper2">
+                            </div>
+                            <div class="news_slide_txt">
+                                <span>지면광고</span><span>2022.01</span>
+                               <a href="#">
+                                  <p>너의 처음만큼은 제일 좋은 걸로, 일룸 링키플러스</p> 
+                               </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_wrap">
+                                <div class="adBox">
+                                    <iframe id="player_43" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="너의 처음만큼은 제일 좋은 걸로, 일룸 링키플러스(iloom)" src="https://www.youtube.com/embed/MrQST3lCQGk?controls=2&amp;loop=1&amp;rel=0&amp;version=1&amp;autoplay=0&amp;modestbranding=1&amp;playsinline=0&amp;allowfullscreen=true&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.iloom.com&amp;widgetid=3" data-gtm-yt-inspected-7="true" data-gtm-yt-inspected-44082011_166="true"></iframe>
+                                </div>
+                            </div>
+                            <div class="news_slide_txt">
+                                <span>영상광고</span><span>2022.01</span>
+                                    <a href="#">
+                                        <p> 너의 처음만큼은 제일 좋은 걸로, 일룸 링키플러스</p>    
+                                    </a>                                        
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_wrap">
+                                    <img src="./img/swiper3.jpg" alt="swiper3">
+                            </div>
+                            <div class="news_slide_txt">
+                                <span>MAGAZIN</span><span>2020.04</span>
+                                    <a href="#">
+                                        <p> 쌍둥이 가족의 오순도순 거실생활</p>    
+                                    </a>                                        
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_wrap">
+                                    <img src="./img/swiper4.jpg" alt="swiper4">
+                            </div>
+                            <div class="news_slide_txt">
+                                <span>MAGAZIN</span><span>2019.11</span>
+                                    <a href="https://www.iloom.com/company/library/magazineDetail.do?libraryNo=40">
+                                        <p> 함께 일하며 휴식하는 스토리작가 부부의 일룸생활</p>    
+                                    </a>                                        
+                            </div>
+                        </div><!--swiper-slide-->
+                   </div> <!--swiper-wrapper-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper newsinsights_slide-->   
+            </div><!--news_slide-->
+        </div><!--company-->
+    </main>
+    <footer>
+        <div class="footer_txt">
+            <p>빠른상담문의</p>
+            <a href="#" class="more_btn">
+                <span>1:1 채팅하기</span>
+            </a>
+        </div>
+        <div class="call">
+          <span>CONTACT</span>
+          <a class="phone cursor--reg" href="tel:0311234567">031 123 4567</a>
+          <p>Mon - Fri (08:30 - 17:30)</p>
+        </div>
+        <div class="email">
+            <span>email</span>
+            <a class="email cursor--primary-btn" href="mailto:ekdud3512@gmail.com">ekdud3512@gmail.com</a>
+        </div>
+        <div class="contact">
+                <span>contact with us</span>
+                <div class="sns">
+                    <a href="#" class="insta">
+                        <i></i>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i></i>
+                    </a>
+                    <a href="#" class="kakao">
+                        <i></i>
+                    </a>
+                </div>
+        </div><!--contact-->
+        <ul class="footer_wrap">
+              <li><a href="#">INFO</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+        </ul>
+        <p class="copy">
+            Copyright 2022 | All rights reserved
+              <a href="#">daisyryu</a>
+        </p>
+    </footer>
+    
+</body>
+</html>

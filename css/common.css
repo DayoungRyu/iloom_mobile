@@ -1,0 +1,153 @@
+/*글꼴*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700;800&display=swap');
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+  }
+
+.more_btn{
+    font-size: 13px;
+    padding:18px 40px;
+    border-left: 1px solid #768a94;
+    border-right: 1px solid #768a94;
+    letter-spacing: .1875rem;
+    display: block; 
+    position:relative;
+    width: 200px;
+    transition:all 0.5s;
+}
+
+.more_btn:hover{
+    color: #fff;
+    background: #768a94;
+}
+
+.more_btn span{
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height:10px;
+}
+
+.more_btn span::before,
+.more_btn span::after{
+    content: "";
+    display: block;
+    position:absolute;
+    top: 0; 
+    width: 15px;
+    height: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #768a94;
+    border-bottom: 1px solid #768a94;
+}
+
+.more_btn span::before{
+    left:0;
+}
+
+.more_btn span::after{
+   right:0;
+}
+
+.roundanimation{
+  width: 100px;height: 100px;display: block;
+  background: #17181d;
+  position:absolute;
+  border-radius: 50%;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.roundanimation::before{
+    position:absolute;
+    left:5%;top:5%;
+    content: "";
+    width: 90%;height: 90%;
+    background: url(../img/watch-our-video-rotating-text.svg) no-repeat;
+    background-size: 100%;
+
+    animation:rotate_image01 20s linear infinite;
+}
+
+.work_slide .roundanimation::before{
+    background: url(../img/watch-our-video-rotating-text.svg) no-repeat;
+    background-size: 100%;
+}
+
+@keyframes rotate_image01{
+     100%  {transform: rotate(360deg); 
+    }
+}
+
+.roundanimation::after{
+    position:absolute;
+    left:50%; top:50%; 
+    transform: translate(-50%,-50%);
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../img/play-icon.svg) no-repeat;
+    background-size: 100%;   
+}
+
+.sns{
+    width: 100%;
+    display: flex;
+}
+
+.sns a{
+    display: block;
+    width: 40px;height: 40px;
+}
+
+.sns a i{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.sns i{
+    background: url(../img/icon.png) no-repeat;
+    background-size: 140px;
+}
+
+.sns{
+    width: 100%;
+    display: flex;
+}
+
+.sns a{
+    display: block;
+    width: 40px; height: 40px;
+    padding:10px;
+    margin-right: 5px;
+}
+
+.sns i{
+    display: block;
+    width: 100%;height: 100%;
+}
+
+.sns a.insta i{
+    background-position: -60px 0px;
+}
+
+
+.sns a.facebook i{
+    background-position: -20px 0px;
+}
+
+.sns a.youtube i{
+    background-position: -100px 0px;
+}
+.sns a.kakao i{
+    background-position: -80px 0px;
+}

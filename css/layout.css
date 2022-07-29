@@ -1,0 +1,251 @@
+body{
+    color: #252525;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Hahmlet', serif;
+    font-size: 24px;
+    background-color: #dbdcdd;
+    font-weight: 400;
+    position: relative;
+}
+
+header{
+    position:fixed;
+    top:0px;
+    left:0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: top 0.5s;
+    background: #fff;
+}
+
+header.fix{
+    background: #fff;
+    top:0px;
+}
+
+header h1{
+    height: 100%;
+    width: 100px;
+    margin-left: 30px;
+}
+
+header h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 18px;
+}
+
+header h1 img{
+    width: 100%;
+    height: 100%;
+    margin-top: 17.975px;
+}
+
+/*header_right*/
+
+header .header_right{
+    display:flex;
+    justify-content: flex-end;
+    width: 150px;
+    z-index: 10;
+}
+
+header .header_right a{
+    width: 55px; height: 63px;
+    display: block;
+}
+
+
+header .header_right .hidden_menu_btn{
+    background: #222;
+    position: relative;
+    
+}
+
+header .header_right .hidden_menu_btn .hidden_wrap{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+header .header_right .hidden_menu_btn.exit .hidden_wrap .bar{
+    transform: rotate(45deg);
+    transition: transform .5s
+}
+
+header .header_right .hidden_menu_btn.exit .hidden_wrap .bardeg{
+    display: none;
+}
+
+header .header_right .hidden_menu_btn.exit .hidden_wrap .bar1px{
+    top: 0px;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+header .header_right .hidden_menu_btn span{
+    width: 20px;
+    height: 1px;
+    background: #dad4d2;
+    display: block;
+    margin-bottom: 5px;
+}
+
+header .header_right .hidden_menu_btn span:last-child{
+    margin-bottom: 0;
+}
+
+header .header_right .hidden_contact{
+    background-color: #fff;
+    position:relative;
+}
+
+header .header_right .hidden_contact img{
+    display: block;
+    height: 10px;width: 10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*hidden_menu*/
+
+.hidden_menu{
+    position:absolute;
+    top:calc(-100vh - 40px);
+    left:0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    font-size: 60px;
+    padding:100px 30px;
+    transition: all .5s cubic-bezier(.77,0,.175,1);
+    overflow: hidden;
+    font-size:20px;
+    color:#4e5968;
+}
+
+
+.hidden_menu.show{
+    top:-40px;
+}
+
+header.fix .hidden_menu{top:-100vh;}
+header.fix .hidden_menu.show{top:0;}
+
+.hidden_menu .num{
+    display: inline-block;
+    font-size:20px;
+    margin-right: 20px;
+}
+
+.hidden_menu li{
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.hidden_menu a{
+    display: block; 
+    line-height:25px;
+}
+
+/*footer*/
+
+footer{
+    padding:70px 10px 0;
+    background-color: #17181d;
+    color:#fff;
+}
+
+footer .footer_txt{
+    padding-bottom: 40px;
+}
+footer .footer_txt p{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+footer .footer_txt a{
+display:block;
+}
+
+footer .call{
+    margin-top: 40px;
+}
+
+footer .call span{
+    display: block;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+
+footer .call a{
+    display: block;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+footer .call p{
+    font-size:17px;
+    margin-bottom: 40px;
+}
+
+
+footer .email span{
+    display: block;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+
+footer .email a{
+    display: block;
+    font-size:20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color:#333;
+    margin-bottom: 40px;
+    transition: all .4s ease;
+}
+
+footer .email a:hover{
+    color: #4c4c54;
+}
+
+footer .contact{}
+footer .contact span{
+    display: block;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+
+footer .sns{
+    margin-bottom: 40px;
+}
+
+footer .footer_wrap{
+    display: flex;
+    flex-direction: column;
+    font-size:15px;
+    line-height:25px;
+    margin-bottom: 40px;
+}
+
+footer .footer_wrap li{}
+footer .footer_wrap li a{
+    display: block;
+    height: 100%;
+}
+
+footer .copy{
+    font-size:13px;
+    padding-bottom: 40px;
+    display: block;
+}
+footer .copy a{
+    display: inline-block;
+}
